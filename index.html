@@ -2,30 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#05070b">
-    <meta name="description" content="@theniko033 knowen as Goated TheNiko.">
 
-    <title>@theniko033</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>TheNiko — @theniko033</title>
 
-    <link rel="stylesheet" href="style.css">
+    <meta
+        name="description"
+        content="Everything about me — @theniko033">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link
+        rel="stylesheet"
+        href="style.css">
 </head>
 
 <body>
 
 <div class="background">
 
-    <video id="backgroundVideo" autoplay muted loop playsinline preload="auto">
-        <source src="background.mp4" type="video/mp4">
+    <video
+        id="backgroundVideo"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto">
+
+        <source
+            src="background.mp4"
+            type="video/mp4">
+
     </video>
 
     <div class="video-darkness"></div>
+
     <div class="video-color"></div>
 
     <div class="ambient ambient-one"></div>
@@ -33,29 +62,44 @@
     <div class="ambient ambient-three"></div>
 
     <div class="fog"></div>
-    <div class="snow" id="snow"></div>
+
     <div class="grain"></div>
+
+    <div class="snow" id="snow"></div>
 
 </div>
 
-<div class="cursor-glow"></div>
+
+<div class="cursor-glow" id="cursorGlow"></div>
+
 
 <main>
 
-    <nav class="topbar">
+    <!-- TOP BAR -->
+
+    <header class="topbar">
 
         <div class="brand">
+
             <span class="brand-dot"></span>
-            TheNiko
+
+            <span>TheNiko</span>
+
         </div>
+
 
         <div class="online">
+
             <span></span>
-            Online 
+
+            Online
+
         </div>
 
-    </nav>
+    </header>
 
+
+    <!-- HERO -->
 
     <section class="hero reveal">
 
@@ -63,13 +107,20 @@
 
             <div class="cover-light"></div>
 
+            <div class="cover-orb orb-one"></div>
+
+            <div class="cover-orb orb-two"></div>
+
+
             <div class="cover-content">
 
                 <span class="cover-label">
-                    Personal Space
+                    Personal Space 
                 </span>
 
-                <h1>@theniko033</h1>
+                <h1>
+                    @theniko033
+                </h1>
 
                 <p>
                     everything about me
@@ -77,11 +128,10 @@
 
             </div>
 
-            <div class="cover-orb orb-one"></div>
-            <div class="cover-orb orb-two"></div>
-
         </div>
 
+
+        <!-- PROFILE -->
 
         <div class="profile-panel glass">
 
@@ -91,8 +141,7 @@
 
                     <img
                         src="Jane.jpg"
-                        alt="Profile picture"
-                    >
+                        alt="TheNiko">
 
                     <span class="status"></span>
 
@@ -103,17 +152,21 @@
 
                     <div class="name-row">
 
-                        <h2>TheNiko</h2>
+                        <h2>
+                            TheNiko
+                        </h2>
 
                         <span class="verified">
-                            ✓
+                            <i class="fa-solid fa-check"></i>
                         </span>
 
                     </div>
 
+
                     <p class="handle">
                         @theniko033
                     </p>
+
 
                     <p class="bio">
                         A lovely guy with infinite vibes.
@@ -127,18 +180,28 @@
             <div class="profile-meta">
 
                 <div>
-                    <strong>14</strong>
-                    <span>Links</span>
+
+                    <strong>
+                        14
+                    </strong>
+
+                    <span>
+                        LINKS
+                    </span>
+
                 </div>
 
-                <!-- <div>
-                    <strong>4</strong>
-                    <span>Favorites</span>
-                </div> -->
 
                 <div>
-                    <strong>∞</strong>
-                    <span>Vibes</span>
+
+                    <strong>
+                        ∞
+                    </strong>
+
+                    <span>
+                        VIBES
+                    </span>
+
                 </div>
 
             </div>
@@ -146,7 +209,9 @@
         </div>
 
 
-        <div class="music-player glass reveal">
+        <!-- MUSIC PLAYER -->
+
+        <div class="music-player glass">
 
             <div class="music-cover">
 
@@ -158,13 +223,38 @@
             <div class="music-info">
 
                 <span>
-                    Play
+                   Play song:
                 </span>
 
                 <strong>
                     That One Got That Away
                 </strong>
-                
+
+                <small id="musicStatus">
+                    Ready
+                </small>
+
+            </div>
+
+
+            <div class="music-volume">
+
+                <i
+                    class="fa-solid fa-volume-low">
+                </i>
+
+                <input
+                    id="volumeSlider"
+                    type="range"
+                    min="0"
+                    max="1"
+                    step="0.01"
+                    value="0.65">
+
+                <i
+                    class="fa-solid fa-volume-high">
+                </i>
+
             </div>
 
 
@@ -172,9 +262,14 @@
 
                 <button
                     id="musicButton"
-                    aria-label="Play music"
-                >
-                    <i class="fa-solid fa-play"></i>
+                    type="button"
+                    aria-label="Play music">
+
+                    <i
+                        id="musicIcon"
+                        class="fa-solid fa-play">
+                    </i>
+
                 </button>
 
             </div>
@@ -188,19 +283,10 @@
 
         </div>
 
-
-        <audio id="music" preload="auto">
-
-            <source
-                src="song.mp3"
-                type="audio/mpeg"
-            >
-
-        </audio>
-
     </section>
 
 
+    <!-- LINKS -->
 
     <section class="section reveal">
 
@@ -209,14 +295,15 @@
             <div>
 
                 <span class="eyebrow">
-                    @theniko033 everywhere
+                    I'm everywhere, check my links
                 </span>
 
                 <h2>
-                    All Links
+                    My links
                 </h2>
 
             </div>
+
 
             <span class="section-count">
                 14
@@ -228,38 +315,55 @@
         <div class="links-grid">
 
 
+            <!-- DISCORD -->
+
             <a
+                class="link-card"
                 href="https://discord.com/invite/F94Ysaq3za"
                 target="_blank"
-                class="link-card magnetic"
-            >
+                rel="noopener noreferrer">
 
                 <div class="link-icon discord">
+
                     <i class="fa-brands fa-discord"></i>
+
                 </div>
+
 
                 <div class="link-text">
 
                     <strong>
                         Discord
                     </strong>
+
+                    <span>
+                        Join my server
+                    </span>
+
                 </div>
 
-                <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
+                <span class="arrow">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </span>
 
             </a>
 
 
+            <!-- TIKTOK -->
 
             <a
+                class="link-card"
                 href="https://www.tiktok.com/@theniko033"
                 target="_blank"
-                class="link-card magnetic"
-            >
+                rel="noopener noreferrer">
 
                 <div class="link-icon tiktok">
+
                     <i class="fa-brands fa-tiktok"></i>
+
                 </div>
+
 
                 <div class="link-text">
 
@@ -267,23 +371,34 @@
                         TikTok
                     </strong>
 
+                    <span>
+                       Follow me!
+                    </span>
+
                 </div>
 
-                <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
+                <span class="arrow">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </span>
 
             </a>
 
 
+            <!-- STEAM -->
 
             <a
+                class="link-card"
                 href="https://steamcommunity.com/id/theniko033/"
                 target="_blank"
-                class="link-card magnetic"
-            >
+                rel="noopener noreferrer">
 
                 <div class="link-icon steam">
+
                     <i class="fa-brands fa-steam"></i>
+
                 </div>
+
 
                 <div class="link-text">
 
@@ -291,49 +406,69 @@
                         Steam
                     </strong>
 
+                    <span>
+                        Gaming profile!
+                    </span>
 
                 </div>
 
-                <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
+                <span class="arrow">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </span>
 
             </a>
 
 
+            <!-- INSTAGRAM -->
 
             <a
+                class="link-card"
                 href="https://www.instagram.com/theniko033/"
                 target="_blank"
-                class="link-card magnetic"
-            >
+                rel="noopener noreferrer">
 
                 <div class="link-icon instagram">
+
                     <i class="fa-brands fa-instagram"></i>
+
                 </div>
 
-                <div class="link-text">
 
+                <div class="link-text">
 
                     <strong>
                         Instagram
                     </strong>
 
+                    <span>
+                        Follow me!
+                    </span>
+
                 </div>
 
-                <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
+                <span class="arrow">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </span>
 
             </a>
 
 
+            <!-- X -->
 
             <a
+                class="link-card"
                 href="https://x.com/theniko033"
                 target="_blank"
-                class="link-card magnetic"
-            >
+                rel="noopener noreferrer">
 
                 <div class="link-icon x">
+
                     <i class="fa-brands fa-x-twitter"></i>
+
                 </div>
+
 
                 <div class="link-text">
 
@@ -341,24 +476,34 @@
                         X
                     </strong>
 
+                    <span>
+                        Follow me!
+                    </span>
 
                 </div>
 
-                <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
+                <span class="arrow">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </span>
 
             </a>
 
 
+            <!-- GITHUB -->
 
             <a
+                class="link-card"
                 href="https://github.com/mrhasanli"
                 target="_blank"
-                class="link-card magnetic"
-            >
+                rel="noopener noreferrer">
 
                 <div class="link-icon github">
+
                     <i class="fa-brands fa-github"></i>
+
                 </div>
+
 
                 <div class="link-text">
 
@@ -366,24 +511,34 @@
                         GitHub
                     </strong>
 
+                    <span>
+                        Check out my projects!
+                    </span>
 
                 </div>
 
-                <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
+                <span class="arrow">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </span>
 
             </a>
 
 
+            <!-- SPOTIFY -->
 
             <a
-                href="https://open.spotify.com/user/312g4zpgwz746czqn343zzhfwuwe"
+                class="link-card"
+                href="https://open.spotify.com/user/theniko033"
                 target="_blank"
-                class="link-card magnetic"
-            >
+                rel="noopener noreferrer">
 
                 <div class="link-icon spotify">
+
                     <i class="fa-brands fa-spotify"></i>
+
                 </div>
+
 
                 <div class="link-text">
 
@@ -391,24 +546,34 @@
                         Spotify
                     </strong>
 
+                    <span>
+                        My music taste
+                    </span>
 
                 </div>
 
-                <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
+                <span class="arrow">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </span>
 
             </a>
 
 
+            <!-- YOUTUBE -->
 
             <a
+                class="link-card"
                 href="https://www.youtube.com/@theniko033"
                 target="_blank"
-                class="link-card magnetic"
-            >
+                rel="noopener noreferrer">
 
                 <div class="link-icon youtube">
+
                     <i class="fa-brands fa-youtube"></i>
+
                 </div>
+
 
                 <div class="link-text">
 
@@ -416,23 +581,34 @@
                         YouTube
                     </strong>
 
+                    <span>
+                        Subscribe to my channel!
+                    </span>
+
                 </div>
 
-                <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
+                <span class="arrow">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </span>
 
             </a>
 
 
+            <!-- XBOX -->
 
             <a
+                class="link-card"
                 href="https://www.xbox.com/play/user/AlfaNihatYT"
                 target="_blank"
-                class="link-card magnetic"
-            >
+                rel="noopener noreferrer">
 
                 <div class="link-icon xbox">
+
                     <i class="fa-brands fa-xbox"></i>
+
                 </div>
+
 
                 <div class="link-text">
 
@@ -440,23 +616,34 @@
                         Xbox
                     </strong>
 
+                    <span>
+                        Another gaming profile!
+                    </span>
+
                 </div>
 
-                <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
+                <span class="arrow">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </span>
 
             </a>
 
 
+            <!-- ROBLOX -->
 
             <a
+                class="link-card"
                 href="https://www.roblox.com/users/5526997591/profile"
                 target="_blank"
-                class="link-card magnetic"
-            >
+                rel="noopener noreferrer">
 
                 <div class="link-icon roblox">
+
                     <i class="fa-solid fa-gamepad"></i>
+
                 </div>
+
 
                 <div class="link-text">
 
@@ -464,24 +651,34 @@
                         Roblox
                     </strong>
 
+                    <span>
+                        My Roblox profile!
+                    </span>
 
                 </div>
 
-                <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
+                <span class="arrow">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </span>
 
             </a>
 
 
+            <!-- KICK -->
 
             <a
+                class="link-card"
                 href="https://kick.com/theniko033"
                 target="_blank"
-                class="link-card magnetic"
-            >
+                rel="noopener noreferrer">
 
                 <div class="link-icon kick">
+
                     <i class="fa-solid fa-k"></i>
+
                 </div>
+
 
                 <div class="link-text">
 
@@ -489,24 +686,34 @@
                         Kick
                     </strong>
 
+                    <span>
+                        Live streaming platform!
+                    </span>
 
                 </div>
 
-                <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
+                <span class="arrow">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </span>
 
             </a>
 
 
+            <!-- TWITCH -->
 
             <a
+                class="link-card"
                 href="https://www.twitch.tv/theniko033"
                 target="_blank"
-                class="link-card magnetic"
-            >
+                rel="noopener noreferrer">
 
                 <div class="link-icon twitch">
+
                     <i class="fa-brands fa-twitch"></i>
+
                 </div>
+
 
                 <div class="link-text">
 
@@ -514,24 +721,34 @@
                         Twitch
                     </strong>
 
+                    <span>
+                        Another live streaming platform!
+                    </span>
 
                 </div>
 
-                <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
+                <span class="arrow">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </span>
 
             </a>
 
 
+            <!-- GAG.GG -->
 
             <a
+                class="link-card"
                 href="https://gag.gg/u/theniko033"
                 target="_blank"
-                class="link-card magnetic"
-            >
+                rel="noopener noreferrer">
 
                 <div class="link-icon gag">
-                    <i class="fa-solid fa-leaf"></i>
+
+                    <i class="fa-solid fa-seedling"></i>
+
                 </div>
+
 
                 <div class="link-text">
 
@@ -539,24 +756,34 @@
                         GAG.GG
                     </strong>
 
+                    <span>
+                        GAG.GG profile!
+                    </span>
 
                 </div>
 
-                <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
+                <span class="arrow">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </span>
 
             </a>
 
 
+            <!-- GAG2.GG -->
 
             <a
+                class="link-card"
                 href="https://www.gag2.gg/profile/5526997591"
                 target="_blank"
-                class="link-card magnetic"
-            >
+                rel="noopener noreferrer">
 
                 <div class="link-icon gag2">
-                    <i class="fa-solid fa-seedling"></i>
+
+                    <i class="fa-solid fa-leaf"></i>
+
                 </div>
+
 
                 <div class="link-text">
 
@@ -564,12 +791,19 @@
                         GAG2.GG
                     </strong>
 
+                    <span>
+                    GAG2.GG profile!
+                    </span>
 
                 </div>
 
-                <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
+                <span class="arrow">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </span>
 
             </a>
+
 
         </div>
 
@@ -577,171 +811,11 @@
 
 
 
-    <!-- <section class="section reveal">
+    <section class="section reveal">
 
         <div class="section-heading">
 
-            <div>
-
-                <span class="eyebrow">
-                    Favorite Series & Movies
-                </span>
-
-                <h2>
-                    Favorite Films & Series
-                </h2>
-
-            </div>
-
-            <span class="section-count">
-                04
-            </span>
-
-        </div>
-
-
-        <div class="movies">
-
-
-            <div class="movie-card magnetic">
-
-                <div class="movie-image">
-
-                    <img
-                        src="mentalist.jpg"
-                        alt="The Mentalist"
-                    >
-
-                    <div class="movie-overlay"></div>
-
-                    <span class="movie-number">
-                        01
-                    </span>
-
-                </div>
-
-                <div class="movie-info">
-
-                    <span>
-                        TV SERIES
-                    </span>
-
-                    <h3>
-                        The Mentalist
-                    </h3>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="movie-card magnetic">
-
-                <div class="movie-image">
-
-                    <img
-                        src="dexter.jpg"
-                        alt="Dexter"
-                    >
-
-                    <div class="movie-overlay"></div>
-
-                    <span class="movie-number">
-                        02
-                    </span>
-
-                </div>
-
-                <div class="movie-info">
-
-                    <span>
-                        TV SERIES
-                    </span>
-
-                    <h3>
-                        Dexter
-                    </h3>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="movie-card magnetic">
-
-                <div class="movie-image">
-
-                    <img
-                        src="breaking-bad.jpg"
-                        alt="Breaking Bad"
-                    >
-
-                    <div class="movie-overlay"></div>
-
-                    <span class="movie-number">
-                        03
-                    </span>
-
-                </div>
-
-                <div class="movie-info">
-
-                    <span>
-                        TV SERIES
-                    </span>
-
-                    <h3>
-                        Breaking Bad
-                    </h3>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="movie-card magnetic">
-
-                <div class="movie-image">
-
-                    <img
-                        src="prison-break.jpg"
-                        alt="Prison Break"
-                    >
-
-                    <div class="movie-overlay"></div>
-
-                    <span class="movie-number">
-                        04
-                    </span>
-
-                </div>
-
-                <div class="movie-info">
-
-                    <span>
-                        TV SERIES
-                    </span>
-
-                    <h3>
-                        Prison Break
-                    </h3>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section> -->
-
-
-
-    <footer class="footer reveal">
-
-        <div class="footer-line"></div>
+        
 
         <div class="footer-content">
 
@@ -756,607 +830,343 @@
 </main>
 
 
-<canvas
-    id="colorCanvas"
-    width="80"
-    height="45"
-></canvas>
+<!-- MUSIC -->
+
+<audio
+    id="music"
+    src="song.mp3"
+    preload="auto"
+    loop>
+</audio>
 
 
 <script>
 
 const video = document.getElementById("backgroundVideo");
 
-const canvas = document.getElementById("colorCanvas");
+const music = document.getElementById("music");
 
-const ctx = canvas.getContext(
-    "2d",
-    {
-        willReadFrequently: true
-    }
-);
+const musicButton = document.getElementById("musicButton");
 
-const root = document.documentElement;
+const musicIcon = document.getElementById("musicIcon");
 
+const musicStatus = document.getElementById("musicStatus");
 
-let current = {
-    r: 110,
-    g: 160,
-    b: 210
-};
+const volumeSlider = document.getElementById("volumeSlider");
 
+const musicProgress = document.getElementById("musicProgress");
 
-let target = {
-    r: 110,
-    g: 160,
-    b: 210
-};
+const cursorGlow = document.getElementById("cursorGlow");
 
 
-function clamp(value, min, max) {
+/* =========================
+   VIDEO
+   ========================= */
 
-    return Math.min(
-        Math.max(value, min),
-        max
-    );
+video.muted = true;
 
-}
+video.loop = true;
 
+video.playsInline = true;
 
-function sampleVideoColor() {
+video.play().catch(() => {});
 
-    if (
-        video.readyState < 2 ||
-        video.videoWidth === 0
-    ) {
-        return;
-    }
+video.addEventListener("ended", () => {
 
+    video.currentTime = 0;
 
-    ctx.drawImage(
-        video,
-        0,
-        0,
-        canvas.width,
-        canvas.height
-    );
+    video.play().catch(() => {});
 
+});
 
-    const pixels = ctx.getImageData(
-        0,
-        0,
-        canvas.width,
-        canvas.height
-    ).data;
 
+document.addEventListener("visibilitychange", () => {
 
-    let r = 0;
-    let g = 0;
-    let b = 0;
-    let count = 0;
-
-
-    for (
-        let i = 0;
-        i < pixels.length;
-        i += 16
-    ) {
-
-        const brightness =
-            (
-                pixels[i] +
-                pixels[i + 1] +
-                pixels[i + 2]
-            ) / 3;
-
-
-        if (brightness > 245) {
-            continue;
-        }
-
-
-        r += pixels[i];
-        g += pixels[i + 1];
-        b += pixels[i + 2];
-
-        count++;
-
-    }
-
-
-    if (!count) {
-        return;
-    }
-
-
-    r /= count;
-    g /= count;
-    b /= count;
-
-
-    const brightness =
-        (r + g + b) / 3;
-
-
-    if (brightness < 35) {
-
-        r += 40;
-        g += 45;
-        b += 55;
-
-    }
-
-
-    target = {
-
-        r: clamp(r, 55, 210),
-
-        g: clamp(g, 75, 220),
-
-        b: clamp(b, 100, 240)
-
-    };
-
-}
-
-
-function animateColor() {
-
-    current.r +=
-        (target.r - current.r) * 0.035;
-
-    current.g +=
-        (target.g - current.g) * 0.035;
-
-    current.b +=
-        (target.b - current.b) * 0.035;
-
-
-    const rgb =
-        `${Math.round(current.r)}, ${Math.round(current.g)}, ${Math.round(current.b)}`;
-
-
-    root.style.setProperty(
-        "--accent-rgb",
-        rgb
-    );
-
-
-    root.style.setProperty(
-        "--accent",
-        `rgb(${rgb})`
-    );
-
-
-    requestAnimationFrame(
-        animateColor
-    );
-
-}
-
-
-setInterval(
-    sampleVideoColor,
-    300
-);
-
-
-animateColor();
-
-
-video.playbackRate = 1.35;
-
-
-video.addEventListener(
-    "loadeddata",
-    () => {
-
-        video.playbackRate = 1.35;
-
-        video.play().catch(() => {});
-
-        sampleVideoColor();
-
-    }
-);
-
-
-video.addEventListener(
-    "canplay",
-    () => {
-
-        video.playbackRate = 1.35;
+    if (!document.hidden) {
 
         video.play().catch(() => {});
 
     }
-);
 
+});
 
-document.addEventListener(
-    "visibilitychange",
-    () => {
 
-        if (!document.hidden) {
-
-            video.playbackRate = 1.35;
-
-            video.play().catch(() => {});
-
-        }
-
-    }
-);
-
-
-
-const cursorGlow =
-    document.querySelector(
-        ".cursor-glow"
-    );
-
-
-window.addEventListener(
-    "pointermove",
-    event => {
-
-        cursorGlow.style.left =
-            `${event.clientX}px`;
-
-        cursorGlow.style.top =
-            `${event.clientY}px`;
-
-    }
-);
-
-
-
-const magneticElements =
-    document.querySelectorAll(
-        ".magnetic"
-    );
-
-
-magneticElements.forEach(
-    element => {
-
-        element.addEventListener(
-            "mousemove",
-            event => {
-
-                if (window.innerWidth <= 700) {
-                    return;
-                }
-
-
-                const rect =
-                    element.getBoundingClientRect();
-
-
-                const x =
-                    event.clientX - rect.left;
-
-                const y =
-                    event.clientY - rect.top;
-
-
-                const centerX =
-                    rect.width / 2;
-
-                const centerY =
-                    rect.height / 2;
-
-
-                const moveX =
-                    (x - centerX) / 14;
-
-                const moveY =
-                    (y - centerY) / 14;
-
-
-                element.style.transform =
-                    `translate(${moveX}px, ${moveY}px)`;
-
-            }
-        );
-
-
-        element.addEventListener(
-            "mouseleave",
-            () => {
-
-                element.style.transform = "";
-
-            }
-        );
-
-    }
-);
-
-
-
-const reveals =
-    document.querySelectorAll(
-        ".reveal"
-    );
-
-
-const revealObserver =
-    new IntersectionObserver(
-        entries => {
-
-            entries.forEach(
-                entry => {
-
-                    if (
-                        entry.isIntersecting
-                    ) {
-
-                        entry.target.classList.add(
-                            "visible"
-                        );
-
-                        revealObserver.unobserve(
-                            entry.target
-                        );
-
-                    }
-
-                }
-            );
-
-        },
-        {
-            threshold: 0.12
-        }
-    );
-
-
-reveals.forEach(
-    element => {
-
-        revealObserver.observe(
-            element
-        );
-
-    }
-);
-
-
-
-const snow =
-    document.getElementById(
-        "snow"
-    );
-
-
-for (
-    let i = 0;
-    i < 45;
-    i++
-) {
-
-    const flake =
-        document.createElement(
-            "span"
-        );
-
-
-    const size =
-        Math.random() * 3 + 1;
-
-    const duration =
-        Math.random() * 14 + 10;
-
-    const delay =
-        Math.random() * -20;
-
-    const left =
-        Math.random() * 100;
-
-
-    flake.style.width =
-        `${size}px`;
-
-    flake.style.height =
-        `${size}px`;
-
-    flake.style.left =
-        `${left}%`;
-
-    flake.style.animationDuration =
-        `${duration}s`;
-
-    flake.style.animationDelay =
-        `${delay}s`;
-
-
-    snow.appendChild(
-        flake
-    );
-
-}
-
-
-
-document.querySelectorAll(
-    ".link-card"
-).forEach(
-    card => {
-
-        card.addEventListener(
-            "mousemove",
-            event => {
-
-                const rect =
-                    card.getBoundingClientRect();
-
-
-                const x =
-                    event.clientX - rect.left;
-
-                const y =
-                    event.clientY - rect.top;
-
-
-                card.style.setProperty(
-                    "--mouse-x",
-                    `${x}px`
-                );
-
-
-                card.style.setProperty(
-                    "--mouse-y",
-                    `${y}px`
-                );
-
-            }
-        );
-
-    }
-);
-
-
-
-document.querySelectorAll(
-    ".movie-card"
-).forEach(
-    card => {
-
-        card.addEventListener(
-            "mousemove",
-            event => {
-
-                if (window.innerWidth <= 700) {
-                    return;
-                }
-
-
-                const rect =
-                    card.getBoundingClientRect();
-
-
-                const x =
-                    event.clientX - rect.left;
-
-                const y =
-                    event.clientY - rect.top;
-
-
-                const rotateY =
-                    ((x / rect.width) - 0.5) * 7;
-
-
-                const rotateX =
-                    ((y / rect.height) - 0.5) * -7;
-
-
-                card.style.transform =
-                    `perspective(900px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-6px)`;
-
-            }
-        );
-
-
-        card.addEventListener(
-            "mouseleave",
-            () => {
-
-                card.style.transform = "";
-
-            }
-        );
-
-    }
-);
-
-
-
-const music =
-    document.getElementById(
-        "music"
-    );
-
-
-const musicButton =
-    document.getElementById(
-        "musicButton"
-    );
-
-
-const musicProgress =
-    document.getElementById(
-        "musicProgress"
-    );
-
+/* =========================
+   MUSIC
+   ========================= */
 
 music.volume = 0.65;
 
+music.loop = true;
 
-musicButton.addEventListener(
-    "click",
+
+function updateMusicButton() {
+
+    if (!music.paused) {
+
+        musicIcon.className =
+            "fa-solid fa-pause";
+
+        musicStatus.textContent =
+            "Playing";
+
+    } else {
+
+        musicIcon.className =
+            "fa-solid fa-play";
+
+        musicStatus.textContent =
+            "Paused";
+
+    }
+
+}
+
+
+function playMusic() {
+
+    music.play()
+        .then(() => {
+
+            updateMusicButton();
+
+        })
+        .catch(() => {
+
+            musicStatus.textContent =
+                "Click anywhere to play";
+
+        });
+
+}
+
+
+musicButton.addEventListener("click", (event) => {
+
+    event.stopPropagation();
+
+    if (music.paused) {
+
+        playMusic();
+
+    } else {
+
+        music.pause();
+
+        updateMusicButton();
+
+    }
+
+});
+
+
+volumeSlider.addEventListener("input", () => {
+
+    music.volume =
+        Number(volumeSlider.value);
+
+});
+
+
+music.addEventListener("timeupdate", () => {
+
+    if (!music.duration) {
+        return;
+    }
+
+    const percentage =
+        (music.currentTime / music.duration) * 100;
+
+    musicProgress.style.width =
+        percentage + "%";
+
+});
+
+
+music.addEventListener("play", () => {
+
+    updateMusicButton();
+
+});
+
+
+music.addEventListener("pause", () => {
+
+    updateMusicButton();
+
+});
+
+
+music.addEventListener("ended", () => {
+
+    music.currentTime = 0;
+
+    playMusic();
+
+});
+
+
+/* Try autoplay */
+
+window.addEventListener("load", () => {
+
+    playMusic();
+
+});
+
+
+/* Browser autoplay fallback */
+
+document.addEventListener(
+    "pointerdown",
     () => {
 
         if (music.paused) {
 
-            music.play()
-                .then(
-                    () => {
+            playMusic();
 
-                        musicButton.innerHTML =
-                            '<i class="fa-solid fa-pause"></i>';
+        }
 
-                    }
-                )
-                .catch(
-                    () => {}
+    },
+    {
+        once: true
+    }
+);
+
+
+/* =========================
+   CURSOR
+   ========================= */
+
+document.addEventListener("mousemove", (event) => {
+
+    cursorGlow.style.left =
+        event.clientX + "px";
+
+    cursorGlow.style.top =
+        event.clientY + "px";
+
+});
+
+
+/* =========================
+   LINK CARDS
+   ========================= */
+
+document.querySelectorAll(".link-card")
+    .forEach((card) => {
+
+        card.addEventListener(
+            "mousemove",
+            (event) => {
+
+                const rect =
+                    card.getBoundingClientRect();
+
+                const x =
+                    event.clientX - rect.left;
+
+                const y =
+                    event.clientY - rect.top;
+
+                card.style.setProperty(
+                    "--mouse-x",
+                    x + "px"
                 );
 
-        } else {
+                card.style.setProperty(
+                    "--mouse-y",
+                    y + "px"
+                );
 
-            music.pause();
+            }
+        );
 
-            musicButton.innerHTML =
-                '<i class="fa-solid fa-play"></i>';
+    });
 
+
+/* =========================
+   REVEAL
+   ========================= */
+
+const revealElements =
+    document.querySelectorAll(".reveal");
+
+
+const revealObserver =
+    new IntersectionObserver(
+        (entries) => {
+
+            entries.forEach((entry) => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add(
+                        "visible"
+                    );
+
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.08
         }
-
-    }
-);
+    );
 
 
-music.addEventListener(
-    "timeupdate",
-    () => {
+revealElements.forEach((element) => {
 
-        if (!music.duration) {
-            return;
-        }
+    revealObserver.observe(element);
+
+});
 
 
-        const progress =
-            (music.currentTime / music.duration) * 100;
+/* =========================
+   SNOW
+   ========================= */
+
+const snow =
+    document.getElementById("snow");
 
 
-        musicProgress.style.width =
-            `${progress}%`;
+for (let i = 0; i < 45; i++) {
 
-    }
-);
+    const flake =
+        document.createElement("span");
 
+    const size =
+        Math.random() * 4 + 1;
 
-music.addEventListener(
-    "ended",
-    () => {
+    const left =
+        Math.random() * 100;
 
-        musicButton.innerHTML =
-            '<i class="fa-solid fa-play"></i>';
+    const duration =
+        Math.random() * 10 + 8;
 
-        musicProgress.style.width =
-            "0%";
+    const delay =
+        Math.random() * -15;
 
-    }
-);
+    flake.style.width =
+        size + "px";
+
+    flake.style.height =
+        size + "px";
+
+    flake.style.left =
+        left + "%";
+
+    flake.style.animationDuration =
+        duration + "s";
+
+    flake.style.animationDelay =
+        delay + "s";
+
+    snow.appendChild(flake);
+
+}
+
 
 </script>
 
