@@ -7,11 +7,15 @@
         name="viewport"
         content="width=device-width, initial-scale=1.0">
 
-    <title>TheNiko — @theniko033</title>
+    <meta
+        name="theme-color"
+        content="#020307">
 
     <meta
         name="description"
         content="Everything about me — @theniko033">
+
+    <title>TheNiko — @theniko033</title>
 
     <link
         rel="preconnect"
@@ -55,27 +59,29 @@
 
     <div class="video-darkness"></div>
 
-    <div class="video-color"></div>
+</div>
 
-    <div class="ambient ambient-one"></div>
-    <div class="ambient ambient-two"></div>
-    <div class="ambient ambient-three"></div>
 
-    <div class="fog"></div>
+<div
+    class="enter-screen"
+    id="enterScreen">
 
-    <div class="grain"></div>
+    <div class="enter-content">
 
-    <div class="snow" id="snow"></div>
+        <h1>
+            click to enter...
+        </h1>
+
+        <p>
+            @theniko033
+        </p>
+
+    </div>
 
 </div>
 
 
-<div class="cursor-glow" id="cursorGlow"></div>
-
-
 <main>
-
-    <!-- TOP BAR -->
 
     <header class="topbar">
 
@@ -83,10 +89,11 @@
 
             <span class="brand-dot"></span>
 
-            <span>TheNiko</span>
+            <span>
+                TheNiko
+            </span>
 
         </div>
-
 
         <div class="online">
 
@@ -99,23 +106,14 @@
     </header>
 
 
-    <!-- HERO -->
-
     <section class="hero reveal">
 
         <div class="cover">
 
-            <div class="cover-light"></div>
-
-            <div class="cover-orb orb-one"></div>
-
-            <div class="cover-orb orb-two"></div>
-
-
             <div class="cover-content">
 
                 <span class="cover-label">
-                    Personal Space 
+                    Personal Space
                 </span>
 
                 <h1>
@@ -131,9 +129,7 @@
         </div>
 
 
-        <!-- PROFILE -->
-
-        <div class="profile-panel glass">
+        <div class="profile-panel">
 
             <div class="profile-main">
 
@@ -157,16 +153,16 @@
                         </h2>
 
                         <span class="verified">
+
                             <i class="fa-solid fa-check"></i>
+
                         </span>
 
                     </div>
 
-
                     <p class="handle">
                         @theniko033
                     </p>
-
 
                     <p class="bio">
                         🪽 𝙎𝙤𝙢𝙚 𝙩𝙝𝙞𝙣𝙜𝙨 𝙖𝙧𝙚 𝙗𝙚𝙩𝙩𝙚𝙧 𝙡𝙚𝙛𝙩 𝙪𝙣𝙨𝙖𝙞𝙙.
@@ -191,7 +187,6 @@
 
                 </div>
 
-
                 <div>
 
                     <strong>
@@ -209,9 +204,7 @@
         </div>
 
 
-        <!-- MUSIC PLAYER -->
-
-        <div class="music-player glass">
+        <div class="music-player">
 
             <div class="music-cover">
 
@@ -223,7 +216,7 @@
             <div class="music-info">
 
                 <span>
-                   Play song:
+                    NOW PLAYING
                 </span>
 
                 <strong>
@@ -239,9 +232,7 @@
 
             <div class="music-volume">
 
-                <i
-                    class="fa-solid fa-volume-low">
-                </i>
+                <i class="fa-solid fa-volume-low"></i>
 
                 <input
                     id="volumeSlider"
@@ -251,9 +242,7 @@
                     step="0.01"
                     value="0.65">
 
-                <i
-                    class="fa-solid fa-volume-high">
-                </i>
+                <i class="fa-solid fa-volume-high"></i>
 
             </div>
 
@@ -286,8 +275,6 @@
     </section>
 
 
-    <!-- LINKS -->
-
     <section class="section reveal">
 
         <div class="section-heading">
@@ -295,7 +282,7 @@
             <div>
 
                 <span class="eyebrow">
-                    I'm everywhere, check my links
+                    I'm everywhere
                 </span>
 
                 <h2>
@@ -304,523 +291,223 @@
 
             </div>
 
-
-            <span class="section-count">
-                14
-            </span>
-
         </div>
 
 
         <div class="links-grid">
 
-
-            <!-- DISCORD -->
-
             <a
                 class="link-card"
+                data-name="Discord"
                 href="https://discord.com/invite/F94Ysaq3za"
                 target="_blank"
                 rel="noopener noreferrer">
 
                 <div class="link-icon discord">
-
                     <i class="fa-brands fa-discord"></i>
-
                 </div>
-
-
-                <div class="link-text">
-
-                    <strong>
-                        Discord
-                    </strong>
-
-                    <span>
-                        Join my server
-                    </span>
-
-                </div>
-
-
-                <span class="arrow">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </span>
 
             </a>
 
 
-            <!-- TIKTOK -->
-
             <a
                 class="link-card"
+                data-name="TikTok"
                 href="https://www.tiktok.com/@theniko033"
                 target="_blank"
                 rel="noopener noreferrer">
 
                 <div class="link-icon tiktok">
-
                     <i class="fa-brands fa-tiktok"></i>
-
                 </div>
-
-
-                <div class="link-text">
-
-                    <strong>
-                        TikTok
-                    </strong>
-
-                    <span>
-                       Follow me!
-                    </span>
-
-                </div>
-
-
-                <span class="arrow">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </span>
 
             </a>
 
 
-            <!-- STEAM -->
-
             <a
                 class="link-card"
+                data-name="Steam"
                 href="https://steamcommunity.com/id/theniko033/"
                 target="_blank"
                 rel="noopener noreferrer">
 
                 <div class="link-icon steam">
-
                     <i class="fa-brands fa-steam"></i>
-
                 </div>
-
-
-                <div class="link-text">
-
-                    <strong>
-                        Steam
-                    </strong>
-
-                    <span>
-                        Gaming profile!
-                    </span>
-
-                </div>
-
-
-                <span class="arrow">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </span>
 
             </a>
 
 
-            <!-- INSTAGRAM -->
-
             <a
                 class="link-card"
+                data-name="Instagram"
                 href="https://www.instagram.com/theniko033/"
                 target="_blank"
                 rel="noopener noreferrer">
 
                 <div class="link-icon instagram">
-
                     <i class="fa-brands fa-instagram"></i>
-
                 </div>
-
-
-                <div class="link-text">
-
-                    <strong>
-                        Instagram
-                    </strong>
-
-                    <span>
-                        Follow me!
-                    </span>
-
-                </div>
-
-
-                <span class="arrow">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </span>
 
             </a>
 
 
-            <!-- X -->
-
             <a
                 class="link-card"
+                data-name="X"
                 href="https://x.com/theniko033"
                 target="_blank"
                 rel="noopener noreferrer">
 
                 <div class="link-icon x">
-
                     <i class="fa-brands fa-x-twitter"></i>
-
                 </div>
-
-
-                <div class="link-text">
-
-                    <strong>
-                        X
-                    </strong>
-
-                    <span>
-                        Follow me!
-                    </span>
-
-                </div>
-
-
-                <span class="arrow">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </span>
 
             </a>
 
 
-            <!-- GITHUB -->
-
             <a
                 class="link-card"
+                data-name="GitHub"
                 href="https://github.com/mrhasanli"
                 target="_blank"
                 rel="noopener noreferrer">
 
                 <div class="link-icon github">
-
                     <i class="fa-brands fa-github"></i>
-
                 </div>
-
-
-                <div class="link-text">
-
-                    <strong>
-                        GitHub
-                    </strong>
-
-                    <span>
-                        Check out my projects!
-                    </span>
-
-                </div>
-
-
-                <span class="arrow">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </span>
 
             </a>
 
 
-            <!-- SPOTIFY -->
-
             <a
                 class="link-card"
+                data-name="Spotify"
                 href="https://open.spotify.com/user/theniko033"
                 target="_blank"
                 rel="noopener noreferrer">
 
                 <div class="link-icon spotify">
-
                     <i class="fa-brands fa-spotify"></i>
-
                 </div>
-
-
-                <div class="link-text">
-
-                    <strong>
-                        Spotify
-                    </strong>
-
-                    <span>
-                        My music taste
-                    </span>
-
-                </div>
-
-
-                <span class="arrow">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </span>
 
             </a>
 
 
-            <!-- YOUTUBE -->
-
             <a
                 class="link-card"
+                data-name="YouTube"
                 href="https://www.youtube.com/@theniko033"
                 target="_blank"
                 rel="noopener noreferrer">
 
                 <div class="link-icon youtube">
-
                     <i class="fa-brands fa-youtube"></i>
-
                 </div>
-
-
-                <div class="link-text">
-
-                    <strong>
-                        YouTube
-                    </strong>
-
-                    <span>
-                        Subscribe to my channel!
-                    </span>
-
-                </div>
-
-
-                <span class="arrow">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </span>
 
             </a>
 
 
-            <!-- XBOX -->
-
             <a
                 class="link-card"
+                data-name="Xbox"
                 href="https://www.xbox.com/play/user/AlfaNihatYT"
                 target="_blank"
                 rel="noopener noreferrer">
 
                 <div class="link-icon xbox">
-
                     <i class="fa-brands fa-xbox"></i>
-
                 </div>
-
-
-                <div class="link-text">
-
-                    <strong>
-                        Xbox
-                    </strong>
-
-                    <span>
-                        Another gaming profile!
-                    </span>
-
-                </div>
-
-
-                <span class="arrow">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </span>
 
             </a>
 
 
-            <!-- ROBLOX -->
-
             <a
                 class="link-card"
+                data-name="Roblox"
                 href="https://www.roblox.com/users/5526997591/profile"
                 target="_blank"
                 rel="noopener noreferrer">
 
                 <div class="link-icon roblox">
-
                     <i class="fa-solid fa-gamepad"></i>
-
                 </div>
-
-
-                <div class="link-text">
-
-                    <strong>
-                        Roblox
-                    </strong>
-
-                    <span>
-                        My Roblox profile!
-                    </span>
-
-                </div>
-
-
-                <span class="arrow">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </span>
 
             </a>
 
 
-            <!-- KICK -->
-
             <a
                 class="link-card"
+                data-name="Kick"
                 href="https://kick.com/theniko033"
                 target="_blank"
                 rel="noopener noreferrer">
 
                 <div class="link-icon kick">
-
                     <i class="fa-solid fa-k"></i>
-
                 </div>
-
-
-                <div class="link-text">
-
-                    <strong>
-                        Kick
-                    </strong>
-
-                    <span>
-                        Live streaming platform!
-                    </span>
-
-                </div>
-
-
-                <span class="arrow">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </span>
 
             </a>
 
 
-            <!-- TWITCH -->
-
             <a
                 class="link-card"
+                data-name="Twitch"
                 href="https://www.twitch.tv/theniko033"
                 target="_blank"
                 rel="noopener noreferrer">
 
                 <div class="link-icon twitch">
-
                     <i class="fa-brands fa-twitch"></i>
-
                 </div>
-
-
-                <div class="link-text">
-
-                    <strong>
-                        Twitch
-                    </strong>
-
-                    <span>
-                        Another live streaming platform!
-                    </span>
-
-                </div>
-
-
-                <span class="arrow">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </span>
 
             </a>
 
 
-            <!-- GAG.GG -->
-
             <a
                 class="link-card"
+                data-name="GAG.GG"
                 href="https://gag.gg/u/theniko033"
                 target="_blank"
                 rel="noopener noreferrer">
 
                 <div class="link-icon gag">
-
                     <i class="fa-solid fa-seedling"></i>
-
                 </div>
-
-
-                <div class="link-text">
-
-                    <strong>
-                        GAG.GG
-                    </strong>
-
-                    <span>
-                        GAG.GG profile!
-                    </span>
-
-                </div>
-
-
-                <span class="arrow">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </span>
 
             </a>
 
 
-            <!-- GAG2.GG -->
-
             <a
                 class="link-card"
+                data-name="GAG2.GG"
                 href="https://www.gag2.gg/profile/5526997591"
                 target="_blank"
                 rel="noopener noreferrer">
 
                 <div class="link-icon gag2">
-
                     <i class="fa-solid fa-leaf"></i>
-
                 </div>
-
-
-                <div class="link-text">
-
-                    <strong>
-                        GAG2.GG
-                    </strong>
-
-                    <span>
-                    GAG2.GG profile!
-                    </span>
-
-                </div>
-
-
-                <span class="arrow">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </span>
 
             </a>
-
 
         </div>
 
     </section>
 
 
+    <footer class="footer">
 
-    <section class="section reveal">
-
-        <div class="section-heading">
-
-        
+        <div class="footer-line"></div>
 
         <div class="footer-content">
 
             <span>
                 @theniko033
+            </span>
+
+            <span>
+                Personal Space
             </span>
 
         </div>
@@ -829,8 +516,6 @@
 
 </main>
 
-
-<!-- MUSIC -->
 
 <audio
     id="music"
@@ -842,61 +527,39 @@
 
 <script>
 
-const video = document.getElementById("backgroundVideo");
+const video =
+    document.getElementById("backgroundVideo");
 
-const music = document.getElementById("music");
+const music =
+    document.getElementById("music");
 
-const musicButton = document.getElementById("musicButton");
+const enterScreen =
+    document.getElementById("enterScreen");
 
-const musicIcon = document.getElementById("musicIcon");
+const musicButton =
+    document.getElementById("musicButton");
 
-const musicStatus = document.getElementById("musicStatus");
+const musicIcon =
+    document.getElementById("musicIcon");
 
-const volumeSlider = document.getElementById("volumeSlider");
+const musicStatus =
+    document.getElementById("musicStatus");
 
-const musicProgress = document.getElementById("musicProgress");
+const volumeSlider =
+    document.getElementById("volumeSlider");
 
-const cursorGlow = document.getElementById("cursorGlow");
+const musicProgress =
+    document.getElementById("musicProgress");
 
-
-/* =========================
-   VIDEO
-   ========================= */
 
 video.muted = true;
-
 video.loop = true;
-
 video.playsInline = true;
 
 video.play().catch(() => {});
 
-video.addEventListener("ended", () => {
-
-    video.currentTime = 0;
-
-    video.play().catch(() => {});
-
-});
-
-
-document.addEventListener("visibilitychange", () => {
-
-    if (!document.hidden) {
-
-        video.play().catch(() => {});
-
-    }
-
-});
-
-
-/* =========================
-   MUSIC
-   ========================= */
 
 music.volume = 0.65;
-
 music.loop = true;
 
 
@@ -923,7 +586,9 @@ function updateMusicButton() {
 }
 
 
-function playMusic() {
+function startMusic() {
+
+    music.currentTime = 0;
 
     music.play()
         .then(() => {
@@ -934,11 +599,20 @@ function playMusic() {
         .catch(() => {
 
             musicStatus.textContent =
-                "Click anywhere to play";
+                "Click play";
 
         });
 
 }
+
+
+enterScreen.addEventListener("click", () => {
+
+    startMusic();
+
+    enterScreen.classList.add("hidden");
+
+});
 
 
 musicButton.addEventListener("click", (event) => {
@@ -947,15 +621,15 @@ musicButton.addEventListener("click", (event) => {
 
     if (music.paused) {
 
-        playMusic();
+        music.play();
 
     } else {
 
         music.pause();
 
-        updateMusicButton();
-
     }
+
+    updateMusicButton();
 
 });
 
@@ -1001,93 +675,10 @@ music.addEventListener("ended", () => {
 
     music.currentTime = 0;
 
-    playMusic();
+    music.play();
 
 });
 
-
-/* Try autoplay */
-
-window.addEventListener("load", () => {
-
-    playMusic();
-
-});
-
-
-/* Browser autoplay fallback */
-
-document.addEventListener(
-    "pointerdown",
-    () => {
-
-        if (music.paused) {
-
-            playMusic();
-
-        }
-
-    },
-    {
-        once: true
-    }
-);
-
-
-/* =========================
-   CURSOR
-   ========================= */
-
-document.addEventListener("mousemove", (event) => {
-
-    cursorGlow.style.left =
-        event.clientX + "px";
-
-    cursorGlow.style.top =
-        event.clientY + "px";
-
-});
-
-
-/* =========================
-   LINK CARDS
-   ========================= */
-
-document.querySelectorAll(".link-card")
-    .forEach((card) => {
-
-        card.addEventListener(
-            "mousemove",
-            (event) => {
-
-                const rect =
-                    card.getBoundingClientRect();
-
-                const x =
-                    event.clientX - rect.left;
-
-                const y =
-                    event.clientY - rect.top;
-
-                card.style.setProperty(
-                    "--mouse-x",
-                    x + "px"
-                );
-
-                card.style.setProperty(
-                    "--mouse-y",
-                    y + "px"
-                );
-
-            }
-        );
-
-    });
-
-
-/* =========================
-   REVEAL
-   ========================= */
 
 const revealElements =
     document.querySelectorAll(".reveal");
@@ -1123,50 +714,18 @@ revealElements.forEach((element) => {
 });
 
 
-/* =========================
-   SNOW
-   ========================= */
+document.addEventListener(
+    "visibilitychange",
+    () => {
 
-const snow =
-    document.getElementById("snow");
+        if (!document.hidden) {
 
+            video.play().catch(() => {});
 
-for (let i = 0; i < 45; i++) {
+        }
 
-    const flake =
-        document.createElement("span");
-
-    const size =
-        Math.random() * 4 + 1;
-
-    const left =
-        Math.random() * 100;
-
-    const duration =
-        Math.random() * 10 + 8;
-
-    const delay =
-        Math.random() * -15;
-
-    flake.style.width =
-        size + "px";
-
-    flake.style.height =
-        size + "px";
-
-    flake.style.left =
-        left + "%";
-
-    flake.style.animationDuration =
-        duration + "s";
-
-    flake.style.animationDelay =
-        delay + "s";
-
-    snow.appendChild(flake);
-
-}
-
+    }
+);
 
 </script>
 
