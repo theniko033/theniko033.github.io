@@ -2,41 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#05070b">
+    <meta name="description" content="@theniko033">
 
-    <meta
-        name="theme-color"
-        content="#020307">
+    <title>TheNiko</title>
 
-    <meta
-        name="description"
-        content="Everything about me — @theniko033">
-
-    <title>TheNiko — @theniko033</title>
+    <link rel="stylesheet" href="style.css">
 
     <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com">
-
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
 
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <link
         rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <link
-        rel="stylesheet"
-        href="style.css">
+    >
 </head>
 
 <body>
@@ -49,160 +32,244 @@
         muted
         loop
         playsinline
-        preload="auto">
-
-        <source
-            src="background.mp4"
-            type="video/mp4">
-
+        preload="auto"
+    >
+        <source src="background.mp4" type="video/mp4">
     </video>
 
-    <div class="video-darkness"></div>
+    <div class="background-overlay"></div>
+
+    <div class="background-vignette"></div>
 
 </div>
 
 
-<div
-    class="enter-screen"
-    id="enterScreen">
+<div id="enterScreen" class="enter-screen">
+
+    <div class="enter-glow"></div>
 
     <div class="enter-content">
 
-        <h1>
-            click to enter...
-        </h1>
+        <div class="enter-line"></div>
 
-        <p>
-            @theniko033
-        </p>
+        <h1>click to enter...</h1>
+
+        <span>@theniko033</span>
+
+        <div class="enter-line"></div>
 
     </div>
 
 </div>
 
 
-<main>
+<main class="container">
 
-    <header class="topbar">
-
-        <div class="brand">
-
-            <span class="brand-dot"></span>
-
-            <span>
-                TheNiko
-            </span>
-
-        </div>
-
-        <div class="online">
-
-            <span></span>
-
-            Online
-
-        </div>
-
-    </header>
+    <h1 class="page-title">
+        TheNiko
+    </h1>
 
 
-    <section class="hero reveal">
+    <section class="profile-section">
 
-        <div class="cover">
+        <div class="profile">
 
-            <div class="cover-content">
+            <div class="avatar-wrapper">
 
-                <span class="cover-label">
-                    Personal Space
-                </span>
+                <img
+                    src="icon.jpeg"
+                    alt="TheNiko"
+                    class="avatar"
+                >
 
-                <h1>
-                    @theniko033
-                </h1>
-
-                <p>
-                    everything about me
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="profile-panel">
-
-            <div class="profile-main">
-
-                <div class="avatar-wrapper">
-
-                    <img
-                        src="icon.jpeg"
-                        alt="TheNiko">
-
-                    <span class="status"></span>
-
-                </div>
-
-
-                <div class="profile-info">
-
-                    <div class="name-row">
-
-                        <h2>
-                            TheNiko
-                        </h2>
-
-                        <span class="verified">
-
-                            <i class="fa-solid fa-check"></i>
-
-                        </span>
-
-                    </div>
-
-                    <p class="handle">
-                        @theniko033
-                    </p>
-
-                    <p class="bio">
-                        🪽 𝙎𝙤𝙢𝙚 𝙩𝙝𝙞𝙣𝙜𝙨 𝙖𝙧𝙚 𝙗𝙚𝙩𝙩𝙚𝙧 𝙡𝙚𝙛𝙩 𝙪𝙣𝙨𝙖𝙞𝙙.
-                    </p>
-
-                </div>
+                <span class="online-dot"></span>
 
             </div>
 
 
-            <div class="profile-meta">
+            <div class="profile-information">
 
-                <div>
+                <div class="username-row">
 
-                    <strong>
-                        14
-                    </strong>
+                    <span class="username">
+                        theniko033
+                    </span>
 
-                    <span>
-                        Links
+                    <span class="verified">
+                        <i class="fa-solid fa-check"></i>
                     </span>
 
                 </div>
 
-                <div>
-
-                    <strong>
-                        ∞
-                    </strong>
-
-                    <span>
-                        Vibes
-                    </span>
-
+                <div class="bio">
+                    🪽 <i>Some things are better left unsaid.</i>
                 </div>
 
             </div>
 
         </div>
 
+    </section>
+
+
+    <section class="social-section">
+
+        <div class="socials">
+
+            <a
+                href="https://discord.com/invite/F94Ysaq3za"
+                target="_blank"
+                class="social discord"
+                aria-label="Discord"
+            >
+                <i class="fa-brands fa-discord"></i>
+            </a>
+
+
+            <a
+                href="https://www.tiktok.com/@theniko033"
+                target="_blank"
+                class="social tiktok"
+                aria-label="TikTok"
+            >
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+
+
+            <a
+                href="https://steamcommunity.com/id/theniko033/"
+                target="_blank"
+                class="social steam"
+                aria-label="Steam"
+            >
+                <i class="fa-brands fa-steam"></i>
+            </a>
+
+
+            <a
+                href="https://www.instagram.com/theniko033/"
+                target="_blank"
+                class="social instagram"
+                aria-label="Instagram"
+            >
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+
+            <a
+                href="https://x.com/theniko033"
+                target="_blank"
+                class="social twitter"
+                aria-label="X"
+            >
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+
+            <a
+                href="https://github.com/mrhasanli"
+                target="_blank"
+                class="social github"
+                aria-label="GitHub"
+            >
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+
+            <a
+                href="https://open.spotify.com/user/theniko033"
+                target="_blank"
+                class="social spotify"
+                aria-label="Spotify"
+            >
+                <i class="fa-brands fa-spotify"></i>
+            </a>
+
+
+            <a
+                href="https://www.youtube.com/@theniko033"
+                target="_blank"
+                class="social youtube"
+                aria-label="YouTube"
+            >
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+
+            <a
+                href="https://www.xbox.com/play/user/AlfaNihatYT"
+                target="_blank"
+                class="social xbox"
+                aria-label="Xbox"
+            >
+                <i class="fa-brands fa-xbox"></i>
+            </a>
+
+
+            <a
+                href="https://www.roblox.com/users/5526997591/profile"
+                target="_blank"
+                class="social roblox"
+                aria-label="Roblox"
+            >
+                <i class="fa-solid fa-cube"></i>
+            </a>
+
+
+            <a
+                href="https://kick.com/theniko033"
+                target="_blank"
+                class="social kick"
+                aria-label="Kick"
+            >
+                <i class="fa-solid fa-k"></i>
+            </a>
+
+
+            <a
+                href="https://www.twitch.tv/theniko033"
+                target="_blank"
+                class="social twitch"
+                aria-label="Twitch"
+            >
+                <i class="fa-brands fa-twitch"></i>
+            </a>
+
+
+            <a
+                href="https://gag.gg/u/theniko033"
+                target="_blank"
+                class="social gag"
+                aria-label="GAG"
+            >
+                <i class="fa-solid fa-seedling"></i>
+            </a>
+
+
+            <a
+                href="https://www.gag2.gg/profile/5526997591"
+                target="_blank"
+                class="social gag2"
+                aria-label="GAG2"
+            >
+                <i class="fa-solid fa-leaf"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <div class="views">
+
+        <i class="fa-solid fa-eye"></i>
+
+        <span>95</span>
+
+    </div>
+
+
+    <section class="music-section">
 
         <div class="music-player">
 
@@ -213,493 +280,345 @@
             </div>
 
 
-            <div class="music-info">
+            <div class="music-content">
 
-                <span>
-                    Now Playing:
-                </span>
-
-                <strong>
-                    That One Got That Away
-                </strong>
-
-                <small id="musicStatus">
-                    -
-                </small>
-
-            </div>
+                <div class="music-name">
+                    That One That Got Away
+                </div>
 
 
-            <div class="music-volume">
+                <div class="music-row">
 
-                <i class="fa-solid fa-volume-low"></i>
+                    <span id="currentTime">
+                        0:00
+                    </span>
 
-                <input
-                    id="volumeSlider"
-                    type="range"
-                    min="0"
-                    max="1"
-                    step="0.01"
-                    value="0.65">
 
-                <i class="fa-solid fa-volume-high"></i>
+                    <div
+                        class="progress-container"
+                        id="progressContainer"
+                    >
+
+                        <div
+                            id="progressBar"
+                            class="progress-bar"
+                        ></div>
+
+                    </div>
+
+
+                    <span id="duration">
+                        0:00
+                    </span>
+
+                </div>
 
             </div>
 
 
             <div class="music-controls">
 
-                <button
-                    id="musicButton"
-                    type="button"
-                    aria-label="Play music">
+                <button id="previous">
 
-                    <i
-                        id="musicIcon"
-                        class="fa-solid fa-play">
-                    </i>
+                    <i class="fa-solid fa-backward-step"></i>
 
                 </button>
 
-            </div>
+
+                <button
+                    id="playButton"
+                    class="play"
+                >
+
+                    <i
+                        id="playIcon"
+                        class="fa-solid fa-pause"
+                    ></i>
+
+                </button>
 
 
-            <div class="music-progress">
+                <button id="next">
 
-                <div id="musicProgress"></div>
+                    <i class="fa-solid fa-forward-step"></i>
+
+                </button>
+
+
+                <div class="volume-control">
+
+                    <i
+                        id="volumeIcon"
+                        class="fa-solid fa-volume-high"
+                    ></i>
+
+                    <input
+                        id="volumeSlider"
+                        type="range"
+                        min="0"
+                        max="1"
+                        step="0.01"
+                        value="0.65"
+                    >
+
+                </div>
 
             </div>
 
         </div>
 
     </section>
-
-
-    <section class="section reveal">
-
-        <div class="section-heading">
-
-            <div>
-                <h2>
-                    Links:
-                </h2>
-
-            </div>
-
-        </div>
-
-
-        <div class="links-grid">
-
-            <a
-                class="link-card"
-                data-name="Discord"
-                href="https://discord.com/invite/F94Ysaq3za"
-                target="_blank"
-                rel="noopener noreferrer">
-
-                <div class="link-icon discord">
-                    <i class="fa-brands fa-discord"></i>
-                </div>
-
-            </a>
-
-
-            <a
-                class="link-card"
-                data-name="TikTok"
-                href="https://www.tiktok.com/@theniko033"
-                target="_blank"
-                rel="noopener noreferrer">
-
-                <div class="link-icon tiktok">
-                    <i class="fa-brands fa-tiktok"></i>
-                </div>
-
-            </a>
-
-
-            <a
-                class="link-card"
-                data-name="Steam"
-                href="https://steamcommunity.com/id/theniko033/"
-                target="_blank"
-                rel="noopener noreferrer">
-
-                <div class="link-icon steam">
-                    <i class="fa-brands fa-steam"></i>
-                </div>
-
-            </a>
-
-
-            <a
-                class="link-card"
-                data-name="Instagram"
-                href="https://www.instagram.com/theniko033/"
-                target="_blank"
-                rel="noopener noreferrer">
-
-                <div class="link-icon instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-
-            </a>
-
-
-            <a
-                class="link-card"
-                data-name="X"
-                href="https://x.com/theniko033"
-                target="_blank"
-                rel="noopener noreferrer">
-
-                <div class="link-icon x">
-                    <i class="fa-brands fa-x-twitter"></i>
-                </div>
-
-            </a>
-
-
-            <a
-                class="link-card"
-                data-name="GitHub"
-                href="https://github.com/mrhasanli"
-                target="_blank"
-                rel="noopener noreferrer">
-
-                <div class="link-icon github">
-                    <i class="fa-brands fa-github"></i>
-                </div>
-
-            </a>
-
-
-            <a
-                class="link-card"
-                data-name="Spotify"
-                href="https://open.spotify.com/user/theniko033"
-                target="_blank"
-                rel="noopener noreferrer">
-
-                <div class="link-icon spotify">
-                    <i class="fa-brands fa-spotify"></i>
-                </div>
-
-            </a>
-
-
-            <a
-                class="link-card"
-                data-name="YouTube"
-                href="https://www.youtube.com/@theniko033"
-                target="_blank"
-                rel="noopener noreferrer">
-
-                <div class="link-icon youtube">
-                    <i class="fa-brands fa-youtube"></i>
-                </div>
-
-            </a>
-
-
-            <a
-                class="link-card"
-                data-name="Xbox"
-                href="https://www.xbox.com/play/user/AlfaNihatYT"
-                target="_blank"
-                rel="noopener noreferrer">
-
-                <div class="link-icon xbox">
-                    <i class="fa-brands fa-xbox"></i>
-                </div>
-
-            </a>
-
-
-            <a
-                class="link-card"
-                data-name="Roblox"
-                href="https://www.roblox.com/users/5526997591/profile"
-                target="_blank"
-                rel="noopener noreferrer">
-
-                <div class="link-icon roblox">
-                    <i class="fa-solid fa-gamepad"></i>
-                </div>
-
-            </a>
-
-
-            <a
-                class="link-card"
-                data-name="Kick"
-                href="https://kick.com/theniko033"
-                target="_blank"
-                rel="noopener noreferrer">
-
-                <div class="link-icon kick">
-                    <i class="fa-solid fa-k"></i>
-                </div>
-
-            </a>
-
-
-            <a
-                class="link-card"
-                data-name="Twitch"
-                href="https://www.twitch.tv/theniko033"
-                target="_blank"
-                rel="noopener noreferrer">
-
-                <div class="link-icon twitch">
-                    <i class="fa-brands fa-twitch"></i>
-                </div>
-
-            </a>
-
-
-            <a
-                class="link-card"
-                data-name="GAG.GG"
-                href="https://gag.gg/u/theniko033"
-                target="_blank"
-                rel="noopener noreferrer">
-
-                <div class="link-icon gag">
-                    <i class="fa-solid fa-seedling"></i>
-                </div>
-
-            </a>
-
-
-            <a
-                class="link-card"
-                data-name="GAG2.GG"
-                href="https://www.gag2.gg/profile/5526997591"
-                target="_blank"
-                rel="noopener noreferrer">
-
-                <div class="link-icon gag2">
-                    <i class="fa-solid fa-leaf"></i>
-                </div>
-
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <footer class="footer">
-
-        <div class="footer-line"></div>
-
-        <div class="footer-content">
-
-            <span>
-                @theniko033
-            </span>
-        </div>
-
-    </footer>
 
 </main>
 
 
 <audio
-    id="music"
+    id="audio"
     src="song.mp3"
+    loop
     preload="auto"
-    loop>
-</audio>
+></audio>
 
 
 <script>
 
-const video =
-    document.getElementById("backgroundVideo");
-
-const music =
-    document.getElementById("music");
-
 const enterScreen =
     document.getElementById("enterScreen");
 
-const musicButton =
-    document.getElementById("musicButton");
+const audio =
+    document.getElementById("audio");
 
-const musicIcon =
-    document.getElementById("musicIcon");
+const video =
+    document.getElementById("backgroundVideo");
 
-const musicStatus =
-    document.getElementById("musicStatus");
+const playButton =
+    document.getElementById("playButton");
+
+const playIcon =
+    document.getElementById("playIcon");
+
+const currentTime =
+    document.getElementById("currentTime");
+
+const duration =
+    document.getElementById("duration");
+
+const progressBar =
+    document.getElementById("progressBar");
+
+const progressContainer =
+    document.getElementById("progressContainer");
 
 const volumeSlider =
     document.getElementById("volumeSlider");
 
-const musicProgress =
-    document.getElementById("musicProgress");
+const volumeIcon =
+    document.getElementById("volumeIcon");
 
+
+audio.volume = 0.65;
 
 video.muted = true;
-video.loop = true;
-video.playsInline = true;
 
 video.play().catch(() => {});
 
 
-music.volume = 0.65;
-music.loop = true;
+function formatTime(seconds) {
+
+    if (!isFinite(seconds)) {
+        return "0:00";
+    }
+
+    const minutes =
+        Math.floor(seconds / 60);
+
+    const remainingSeconds =
+        Math.floor(seconds % 60);
+
+    return (
+        minutes +
+        ":" +
+        String(remainingSeconds).padStart(2, "0")
+    );
+
+}
 
 
-function updateMusicButton() {
+function updateMusicIcon() {
 
-    if (!music.paused) {
+    if (audio.paused) {
 
-        musicIcon.className =
-            "fa-solid fa-pause";
-
-        musicStatus.textContent =
-            "Playing";
+        playIcon.className =
+            "fa-solid fa-play";
 
     } else {
 
-        musicIcon.className =
-            "fa-solid fa-play";
-
-        musicStatus.textContent =
-            "Paused";
+        playIcon.className =
+            "fa-solid fa-pause";
 
     }
 
 }
 
 
-function startMusic() {
+function updateVolumeIcon() {
 
-    music.currentTime = 0;
+    if (audio.volume === 0) {
 
-    music.play()
+        volumeIcon.className =
+            "fa-solid fa-volume-xmark";
+
+    } else if (audio.volume < 0.5) {
+
+        volumeIcon.className =
+            "fa-solid fa-volume-low";
+
+    } else {
+
+        volumeIcon.className =
+            "fa-solid fa-volume-high";
+
+    }
+
+}
+
+
+function playMusic() {
+
+    audio.play()
         .then(() => {
 
-            updateMusicButton();
+            updateMusicIcon();
 
         })
-        .catch(() => {
-
-            musicStatus.textContent =
-                "Click play";
-
-        });
+        .catch(() => {});
 
 }
 
 
 enterScreen.addEventListener("click", () => {
 
-    startMusic();
+    enterScreen.classList.add("hide");
 
-    enterScreen.classList.add("hidden");
+    playMusic();
 
 });
 
 
-musicButton.addEventListener("click", (event) => {
+playButton.addEventListener("click", () => {
 
-    event.stopPropagation();
+    if (audio.paused) {
 
-    if (music.paused) {
-
-        music.play();
+        playMusic();
 
     } else {
 
-        music.pause();
+        audio.pause();
+
+        updateMusicIcon();
 
     }
-
-    updateMusicButton();
 
 });
 
 
 volumeSlider.addEventListener("input", () => {
 
-    music.volume =
+    audio.volume =
         Number(volumeSlider.value);
+
+    updateVolumeIcon();
 
 });
 
 
-music.addEventListener("timeupdate", () => {
+volumeIcon.addEventListener("click", () => {
 
-    if (!music.duration) {
+    if (audio.volume > 0) {
+
+        audio.dataset.previousVolume =
+            audio.volume;
+
+        audio.volume = 0;
+
+        volumeSlider.value = 0;
+
+    } else {
+
+        const previous =
+            Number(audio.dataset.previousVolume || 0.65);
+
+        audio.volume =
+            previous;
+
+        volumeSlider.value =
+            previous;
+
+    }
+
+    updateVolumeIcon();
+
+});
+
+
+progressContainer.addEventListener("click", (event) => {
+
+    if (!audio.duration) {
         return;
     }
 
+    const rect =
+        progressContainer.getBoundingClientRect();
+
+    const clickPosition =
+        event.clientX - rect.left;
+
     const percentage =
-        (music.currentTime / music.duration) * 100;
+        clickPosition / rect.width;
 
-    musicProgress.style.width =
-        percentage + "%";
-
-});
-
-
-music.addEventListener("play", () => {
-
-    updateMusicButton();
+    audio.currentTime =
+        percentage * audio.duration;
 
 });
 
 
-music.addEventListener("pause", () => {
+audio.addEventListener("loadedmetadata", () => {
 
-    updateMusicButton();
-
-});
-
-
-music.addEventListener("ended", () => {
-
-    music.currentTime = 0;
-
-    music.play();
+    duration.textContent =
+        formatTime(audio.duration);
 
 });
 
 
-const revealElements =
-    document.querySelectorAll(".reveal");
+audio.addEventListener("timeupdate", () => {
+
+    currentTime.textContent =
+        formatTime(audio.currentTime);
 
 
-const revealObserver =
-    new IntersectionObserver(
-        (entries) => {
+    if (audio.duration) {
 
-            entries.forEach((entry) => {
+        const percentage =
+            (audio.currentTime / audio.duration) * 100;
 
-                if (entry.isIntersecting) {
+        progressBar.style.width =
+            percentage + "%";
 
-                    entry.target.classList.add(
-                        "visible"
-                    );
+    }
 
-                }
-
-            });
-
-        },
-        {
-            threshold: 0.08
-        }
-    );
+});
 
 
-revealElements.forEach((element) => {
+audio.addEventListener("play", () => {
 
-    revealObserver.observe(element);
+    updateMusicIcon();
+
+});
+
+
+audio.addEventListener("pause", () => {
+
+    updateMusicIcon();
 
 });
 
